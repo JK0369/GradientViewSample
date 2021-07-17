@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
     lazy var gradientView: GradientView = {
         let view = GradientView()
-        view.colors = [UIColor.white.withAlphaComponent(0.01), .white]
+        view.gradientLayerColors = [UIColor.white.withAlphaComponent(0.01), .white]
 
         return view
     }()

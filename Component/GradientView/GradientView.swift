@@ -13,7 +13,7 @@ class GradientView: BaseView {
         case horizontal
     }
 
-    var colors: [UIColor]? {
+    var gradientLayerColors: [UIColor]? {
         didSet { bind() }
     }
 
@@ -51,6 +51,6 @@ class GradientView: BaseView {
     override func bind() {
         super.bind()
 
-        gradientLayer.colors = colors?.compactMap { $0.cgColor }
+        gradientLayer.colors = gradientLayerColors?.compactMap { $0.cgColor }
     }
 }
